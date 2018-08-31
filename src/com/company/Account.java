@@ -13,6 +13,7 @@ public class Account {
     private String customerPhoneNumber;
 
     public Account() {
+        this("12123", 2.50, "Default name", "Defauult email", "Default phone number");
         System.out.println("Empty constructor");
     }
 

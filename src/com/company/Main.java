@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
 
-        Account bobsAccount = new Account("12345", 0.00, "Bob Brown", "mail@mail.com", "(066) 7777117");
+        Account bobsAccount = new Account();//("12345", 0.00, "Bob Brown", "mail@mail.com", "(066) 7777117");
 
 
 
