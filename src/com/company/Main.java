@@ -3,20 +3,21 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
-        Account bobsAccount = new Account();
-        bobsAccount.setNumber("12345");
-        bobsAccount.setBalance(0.00);
-        bobsAccount.setCustomerName("Bob Brown");
-        bobsAccount.setCustomerEmailAddress("mail@mail.com");
-        bobsAccount.setCustomerPhoneNumber("(066) 7777117");
+        Account bobsAccount = new Account("12345", 0.00, "Bob Brown", "mail@mail.com", "(066) 7777117");
 
 
 
-
+        System.out.println(bobsAccount.getNumber());
+        System.out.println(bobsAccount.getBalance());
+        System.out.println(bobsAccount.getCustomerName());
+        System.out.println(bobsAccount.getCustomerEmailAddress());
+        System.out.println(bobsAccount.getCustomerPhoneNumber());
         bobsAccount.withdrawal(100.0);
         bobsAccount.deposit(100.0);
         bobsAccount.withdrawal(10.0);
+
+
     }
 }

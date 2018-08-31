@@ -12,6 +12,19 @@ public class Account {
     private String customerEmailAddress;
     private String customerPhoneNumber;
 
+    public Account() {
+        System.out.println("Empty constructor");
+    }
+
+    public Account(String number, double balance, String customerName, String customerEmailAddress, String customerPhoneNumber) {
+        System.out.println("Account constructor with parametres callled");
+        this.number = number;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmailAddress = customerEmailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
     public void deposit(double depositAmount) {
         this.balance += depositAmount;
         System.out.println("Deposit of " + depositAmount + " made. New Balance " + this.balance);
@@ -65,4 +78,6 @@ public class Account {
     public void setCustomerPhoneNumber(String customerPhoneNumber) {
         this.customerPhoneNumber = customerPhoneNumber;
     }
+
+
 }
