@@ -11,12 +11,16 @@ public class Main {
 
         System.out.println(bobsAccount.getNumber());
         System.out.println(bobsAccount.getBalance());
-        System.out.println(bobsAccount.getCustomerName());
-        System.out.println(bobsAccount.getCustomerEmailAddress());
-        System.out.println(bobsAccount.getCustomerPhoneNumber());
+        //System.out.println(bobsAccount.getCustomerName());
+        //System.out.println(bobsAccount.getCustomerEmailAddress());
+        //System.out.println(bobsAccount.getCustomerPhoneNumber());
         bobsAccount.withdrawal(100.0);
         bobsAccount.deposit(100.0);
         bobsAccount.withdrawal(10.0);
+
+        Account timsAccount = new Account("Tim", "email@emailTim.com", "232323");
+        System.out.println(timsAccount.getBalance());
+        System.out.println(timsAccount.getNumber());
 
 
     }
