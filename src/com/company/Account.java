@@ -10,7 +10,7 @@ public class Account {
     private double balance;
     private String customerName;
     private String customerEmailAddress;
-    private int customerPhoneNumber;
+    private String customerPhoneNumber;
 
     public void deposit(double depositAmount) {
         this.balance += depositAmount;
@@ -58,11 +58,11 @@ public class Account {
         this.customerEmailAddress = customerEmailAddress;
     }
 
-    public int getCustomerPhoneNumber() {
+    public String getCustomerPhoneNumber() {
         return customerPhoneNumber;
     }
 
-    public void setCustomerPhoneNumber(int customerPhoneNumber) {
+    public void setCustomerPhoneNumber(String customerPhoneNumber) {
         this.customerPhoneNumber = customerPhoneNumber;
     }
 }
